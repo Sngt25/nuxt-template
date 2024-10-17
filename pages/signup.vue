@@ -8,7 +8,7 @@ import { Label } from '@/components/ui/label'
 <template>
   <div class="background-image w-full min-h-screen flex items-start justify-start p-10 relative">
 
-    <div class="absolute top-4 left-1/2 transform -translate-x-1/2 logo-size md:left-4 md:transform-none md:-translate-x-0">
+    <div class="absolute top-4 left-1/2 transform -translate-x-1/2 logo-size md:left-9 md:transform-none md:-translate-x-0">
       <img src="/public/Logo2.png" alt="Logo" />
     </div>
 
@@ -52,8 +52,8 @@ import { Label } from '@/components/ui/label'
       </div>
       <div class="mt-4 text-center text-sm text-white">
         Already have an account?
-        <NuxtLink to="login">
-          <a href="#" class="underline text-white">Login</a>  
+        <NuxtLink to="/login">
+          <a href="" class="underline text-white">Login</a>  
         </NuxtLink>
       </div>
     </div>

@@ -33,30 +33,30 @@ defineComponent({
         <div class="flex-1">
           <nav class="grid items-start px-2 text-sm font-medium lg:px-4 gap-2 pt-2">
             <p class="text-gray-600">MAIN MENU</p>
-            <a href="/"
-              class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary hover:bg-[#27272f]">
+            <NuxtLink to="/user-dashboard"
+              class=" flex items-center gap-3 rounded-lg px-3 py-2 text-primary transition-all hover:text-primary hover:bg-[#27272f]">
               <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
                 <path fill="white" d="M13 9V3h8v6zM3 13V3h8v10zm10 8V11h8v10zM3 21v-6h8v6z" />
               </svg>
               <p class="text-white">Dashboard</p>
-
-            </a>
-            <NuxtLink to="/user-product"
-              class=" flex items-center gap-3 rounded-lg px-3 py-2 text-primary transition-all hover:text-primary hover:bg-[#27272f]">
+            </NuxtLink>
+            <a href="#"
+              class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary hover:bg-[#27272f]">
               <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
                 <path fill="white"
                   d="M12.005 1a5 5 0 0 1 5 5v2h3a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-16a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3V6a5 5 0 0 1 5-5m5 10h-2v1a1 1 0 0 0 1.993.116l.007-.116zm-8 0h-2v1a1 1 0 0 0 1.993.116L9.005 12zm3-8A3 3 0 0 0 9.01 5.823L9.005 6v2h6V6a3 3 0 0 0-2.824-2.995z" />
               </svg>
-              <p class="text-white">Product</p>
-            </NuxtLink>
-            <NuxtLink to="/user-equipment"
-              class=" flex items-center gap-3 rounded-lg px-3 py-2 text-primary transition-all hover:text-primary hover:bg-[#27272f]">
+              <p class="text-white">Products</p>
+            </a>
+            <NuxtLink to="user-equipment"
+              class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary hover:bg-[#27272f]">
               <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 256 256">
                 <path fill="white"
                   d="M200 64v128a16 16 0 0 1-16 16h-16a16 16 0 0 1-16-16v-56h-48v56a16 16 0 0 1-16 16H72a16 16 0 0 1-16-16V64a16 16 0 0 1 16-16h16a16 16 0 0 1 16 16v56h48V64a16 16 0 0 1 16-16h16a16 16 0 0 1 16 16M36 72h-4a16 16 0 0 0-16 16v32H8.27A8.18 8.18 0 0 0 0 127.47A8 8 0 0 0 8 136h8v32a16 16 0 0 0 16 16h4a4 4 0 0 0 4-4V76a4 4 0 0 0-4-4m220 55.47a8.18 8.18 0 0 0-8.25-7.47H240V88a16 16 0 0 0-16-16h-4a4 4 0 0 0-4 4v104a4 4 0 0 0 4 4h4a16 16 0 0 0 16-16v-32h8a8 8 0 0 0 8-8.53" />
               </svg>
               <p class="text-white">Equipment</p>
             </NuxtLink>
+
 
             <NuxtLink to="/user-plan"
               class=" flex items-center gap-3 rounded-lg px-3 py-2 text-primary transition-all hover:text-primary hover:bg-[#27272f]">
@@ -77,6 +77,7 @@ defineComponent({
               </svg>
               <p class="text-white">Plan</p>
             </NuxtLink>
+
 
             <hr class="border-gray-700 w-1/8" />
 
@@ -101,7 +102,6 @@ defineComponent({
               <NuxtLink to="/login">
               <p class="text-red-600">Logout</p>
             </NuxtLink>
-
             </a>
 
           </nav>
@@ -112,41 +112,7 @@ defineComponent({
     </div>
     <div class="flex flex-col">
       <header class="flex h-14 items-center gap-4 border-b px-4 lg:h-[60px] lg:px-6 border-gray-700 bg-[#1c1c24] ">
-        <Sheet>
-          <SheetTrigger as-child>
-            <Button variant="outline" size="icon" class="shrink-0 md:hidden">
-              <Menu class="h-5 w-5" />
-              <span class="sr-only">Toggle navigation menu</span>
-            </Button>
-          </SheetTrigger>
-          <SheetContent side="left" class="flex flex-col">
-            <nav class="grid gap-2 text-lg font-medium">
-             
-              <a href="#"
-                class="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 ">
-                <Home class="h-5 w-5" />
-                Dashboard
-              </a>
-              <a href="#"
-                class="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 ">
-                <ShoppingCart class="h-5 w-5" />
-              Product
-              </a>
-              <a href="#"
-                class="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 ">
-                <Package class="h-5 w-5" />
-                Equipment
-              </a>
-              <a href="#"
-                class="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 ">
-                <Users class="h-5 w-5" />
-                Plan
-              </a>
-              
-            </nav>
 
-          </SheetContent>
-        </Sheet>
         <div class="w-full flex-1">
           <form>
             <div class="relative">
@@ -194,7 +160,7 @@ defineComponent({
       <main class="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
         <div class="flex items-center">
           <h1 class="text-lg font-semibold md:text-2xl text-white">
-            Dashboard
+            Products
           </h1>
         </div>
         <div class="flex flex-1 items-center justify-center rounded-lg border border-dashed shadow-sm">

@@ -33,21 +33,22 @@ defineComponent({
         <div class="flex-1">
           <nav class="grid items-start px-2 text-sm font-medium lg:px-4 gap-2 pt-2">
             <p class="text-gray-600">MAIN MENU</p>
-            <a href="/"
-              class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary hover:bg-[#27272f]">
+            <NuxtLink to="/user-dashboard"
+              class=" flex items-center gap-3 rounded-lg px-3 py-2 text-primary transition-all hover:text-primary hover:bg-[#27272f]">
+
               <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
                 <path fill="white" d="M13 9V3h8v6zM3 13V3h8v10zm10 8V11h8v10zM3 21v-6h8v6z" />
               </svg>
               <p class="text-white">Dashboard</p>
 
-            </a>
+            </NuxtLink>
             <NuxtLink to="/user-product"
               class=" flex items-center gap-3 rounded-lg px-3 py-2 text-primary transition-all hover:text-primary hover:bg-[#27272f]">
               <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
                 <path fill="white"
                   d="M12.005 1a5 5 0 0 1 5 5v2h3a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-16a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3V6a5 5 0 0 1 5-5m5 10h-2v1a1 1 0 0 0 1.993.116l.007-.116zm-8 0h-2v1a1 1 0 0 0 1.993.116L9.005 12zm3-8A3 3 0 0 0 9.01 5.823L9.005 6v2h6V6a3 3 0 0 0-2.824-2.995z" />
               </svg>
-              <p class="text-white">Product</p>
+              <p class="text-white">Products</p>
             </NuxtLink>
             <NuxtLink to="/user-equipment"
               class=" flex items-center gap-3 rounded-lg px-3 py-2 text-primary transition-all hover:text-primary hover:bg-[#27272f]">
@@ -58,9 +59,8 @@ defineComponent({
               <p class="text-white">Equipment</p>
             </NuxtLink>
 
-            <NuxtLink to="/user-plan"
-              class=" flex items-center gap-3 rounded-lg px-3 py-2 text-primary transition-all hover:text-primary hover:bg-[#27272f]">
-
+            <a href="#"
+              class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary hover:bg-[#27272f]">
               <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 48 48">
                 <defs>
                   <mask id="ipSPlan0">
@@ -76,7 +76,7 @@ defineComponent({
                 <path fill="white" d="M0 0h48v48H0z" mask="url(#ipSPlan0)" />
               </svg>
               <p class="text-white">Plan</p>
-            </NuxtLink>
+            </a>
 
             <hr class="border-gray-700 w-1/8" />
 
@@ -101,7 +101,6 @@ defineComponent({
               <NuxtLink to="/login">
               <p class="text-red-600">Logout</p>
             </NuxtLink>
-
             </a>
 
           </nav>
@@ -121,28 +120,38 @@ defineComponent({
           </SheetTrigger>
           <SheetContent side="left" class="flex flex-col">
             <nav class="grid gap-2 text-lg font-medium">
-             
+              <a href="#" class="flex items-center gap-2 text-lg font-semibold">
+                <Package2 class="h-6 w-6" />
+                <span class="sr-only">Acme Inc</span>
+              </a>
               <a href="#"
-                class="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 ">
+                class="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground">
                 <Home class="h-5 w-5" />
                 Dashboard
               </a>
               <a href="#"
-                class="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 ">
+                class="mx-[-0.65rem] flex items-center gap-4 rounded-xl bg-muted px-3 py-2 text-foreground hover:text-foreground">
                 <ShoppingCart class="h-5 w-5" />
-              Product
+                Orders
+                <Badge class="ml-auto flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
+                  6
+                </Badge>
               </a>
               <a href="#"
-                class="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 ">
+                class="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground">
                 <Package class="h-5 w-5" />
-                Equipment
+                Products
               </a>
               <a href="#"
-                class="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 ">
+                class="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground">
                 <Users class="h-5 w-5" />
-                Plan
+                Customers
               </a>
-              
+              <a href="#"
+                class="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground">
+                <LineChart class="h-5 w-5" />
+                Analytics
+              </a>
             </nav>
 
           </SheetContent>
@@ -194,7 +203,7 @@ defineComponent({
       <main class="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
         <div class="flex items-center">
           <h1 class="text-lg font-semibold md:text-2xl text-white">
-            Dashboard
+            Plan
           </h1>
         </div>
         <div class="flex flex-1 items-center justify-center rounded-lg border border-dashed shadow-sm">

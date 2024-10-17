@@ -4,13 +4,13 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="flex items-center justify-center ">
   <div class="mx-auto max-w-2xl text-center">
-    <p class="text-primary-custom-green">About Us</p>
+    <p class="text-primary-custom-green"></p>
 
     <h1 class="text-white text-6xl font-bold leading-6rem tracking-tighter">
       <span class="text-stroke">WORK</span> WITH US
     </h1>
-    <p class="mt-6 leading-6 text-gray-300">
-      At Camalig Gym, we strive to assist you in reaching your fitness goals. With high-end equipment along with dedicated fitness trainers who not only focus on physical training but also mental well-being. A perfect place to start or progress in your fitness journey. Whether you're a beginner or an experienced athlete, we're here to guide you every step of the way.
+    <p class="mt-6 leading-6 text-gray-300 ">
+      At Camalig Fitness Gym, we believe fitness should be both affordable and beautiful—or as we say, "Barato pero Magayon" (cheap but beautiful). Founded on August 28, 2018, by Coach Karl Anthony Ayen in Camalig, Albay, our gym was created to give Albayanos a quality fitness experience without the high cost. What began as a local gym has expanded with branches across Albay, and our members proudly embrace the Camalig Fitness name.
     </p>
   </div>
 </div>

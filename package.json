@@ -19,6 +19,7 @@
     "@headlessui/vue": "^1.7.22",
     "@heroicons/vue": "^2.1.5",
     "@nuxt/icon": "^1.5.1",
+    "@tanstack/vue-table": "^8.20.5",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "lucide-vue-next": "^0.424.0",

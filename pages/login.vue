@@ -10,8 +10,8 @@ import { Label } from '@/components/ui/label'
   <div class="background-image w-full min-h-screen flex items-start justify-start p-10">
 
     <div
-      class="absolute top-4 left-1/2 transform -translate-x-1/2 logo-size md:left-4 md:transform-none md:-translate-x-0">
-      <img src="/public/Logo2.png" alt="Logo" />
+      class="absolute top-4 left-1/2 transform -translate-x-1/2 logo-size md:left-9 md:transform-none md:-translate-x-0">
+      <img src="/public/Logo2.png" alt="Logo " />
     </div>
     <div
       class="absolute mt-12 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl text-white flex flex-col hidden md:flex">
@@ -46,16 +46,19 @@ import { Label } from '@/components/ui/label'
           <Input id="password" type="password" required />
         </div>
         <div class="flex gap-5 mt-5">
-          <Button type="submit" class="flex-1 text-black" style="background-color: rgb(124, 252, 0);">Login</Button>
+          <NuxtLink to="/user-dashboard" class="flex-1">
+            <Button type="submit" class="w-full text-black" style="background-color: rgb(124, 252, 0);">Login</Button>
+          </NuxtLink>
           <Button variant="outline" class="flex-1 flex items-center justify-center">
             Login with
             <img src="/public/google-icon.png" alt="Google" class="h-5 ml-2" />
           </Button>
         </div>
+
       </div>
       <div class="mt-4 text-center text-sm text-white">
         Don't have an account?
-        <NuxtLink to="signup">
+        <NuxtLink to="/signup">
           <a href="#" class="underline text-white">Sign up</a>
         </NuxtLink>
       </div>

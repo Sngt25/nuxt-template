@@ -1,19 +1,17 @@
 <template>
-  <div class="bg-black h-screen">
+  <div class="bg-black h-screen ">
     <div class="absolute bottom-10 right-0 h-80 w-80 bg-radial-custom "></div>
     <div class="absolute top-10 left-0 h-80 w-80 bg-radial-custom "></div>
-    
+
     <nav class="max-w-screen-xl mx-auto py-8 flex items-center justify-between gap-8">
       <div class="flex items-center gap-2 w-25 h-10">
         <img src="/public/Logo2.png" alt="logo" class="h-full" />
-        
-
       </div>
 
       <ul class="list-none flex items-center gap-16">
 
         <li>
-          <NuxtLink to="#home" class="relative text-white flex items-center  group">
+          <NuxtLink to="/home" class="relative text-white flex items-center group">
             <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1.8em" height="1.8 em" viewBox="0 0 24 24">
               <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                 <path d="M5 12H3l9-9l9 9h-2M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7" />
@@ -59,11 +57,11 @@
             </svg> -->
             <p>Plan</p>
             <span
-            class="absolute bottom-[-4px] left-0 w-0 h-[2px] bg-primary-custom-green transition-all duration-300 group-hover:w-1/2"></span>
+              class="absolute bottom-[-4px] left-0 w-0 h-[2px] bg-primary-custom-green transition-all duration-300 group-hover:w-1/2"></span>
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink to="#about" class="relative text-white flex items-center group">
+          <NuxtLink to="/about" class="relative text-white flex items-center group">
             <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1.8em" height="1.8em" viewBox="0 0 24 24">
               <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                 color="currentColor">
@@ -79,12 +77,12 @@
           </NuxtLink>
         </li>
       </ul>
-
-      <button
-        class="py-4 px-8 text-black bg-primary-custom-green rounded-lg border-none outline-none cursor-pointer transition duration-300 ease-in-out hover:bg-[#00FF00] font-semibold">
-        Join Now
-      </button>
-
+      <NuxtLink to="signup">
+        <button
+          class="py-4 px-8 text-black bg-primary-custom-green rounded-lg border-none outline-none cursor-pointer transition duration-300 ease-in-out hover:bg-[#00FF00] font-semibold">
+          Join Now
+        </button>
+      </NuxtLink>
     </nav>
 
     <!-- Header Section -->
@@ -93,10 +91,8 @@
       <div class="flex flex-col md:flex-row items-center gap-5 ">
         <div class="header__content flex-1 relative">
           <h4 class="text-primary-custom-green text-1rem font-semibold mb-4">BEST FITNESS IN THE TOWN</h4>
-          
-
           <h1 class="text-white text-8xl font-bold leading-6rem mb-4 tracking-tight">
-            <span class="text-stroke">MAKE</span> YOUR BODY SHAPE
+            <span class="text-stroke ">MAKE</span> YOUR BODY SHAPE
           </h1>
           <p class="text-white mb-8">
             Unleash your potential and embark on a journey towards a stronger,
@@ -104,158 +100,156 @@
             'Make Your Body Shape' now <br>
             and witness the incredible transformation your body is capable of!
           </p>
-          
-          <button
-            class="mt-5 py-4 px-8 text-black bg-primary-custom-green rounded-lg border-none outline-none cursor-pointer transition duration-300 ease-in-out hover:bg-[#00FF00] font-semibold">
-            Get Started
-          </button>
+          <NuxtLink to="/signup">
+            <button
+              class="mt-5 py-4 px-8 text-black bg-primary-custom-green rounded-lg border-none outline-none cursor-pointer transition duration-300 ease-in-out hover:bg-[#00FF00] font-semibold">
+              Get Started
+            </button>
+          </NuxtLink>
           <p
             class="absolute bottom-[-10%] right-[-43%] text-white text-9xl z-0 opacity-10 font-bold outline-text tracking-wider">
             FITNESS
           </p>
         </div>
         <div class="relative flex-1">
-  <!-- The image -->
-  <img src="/public/header3-nobg.png" alt="header" class="w-full h-auto max-w-xs mx-auto relative z-10" />
+          <!-- The image -->
+          <img src="/public/header3-nobg.png" alt="header" class="w-full h-auto max-w-xs mx-auto relative z-10" />
 
-  <!-- The text behind the image -->
-  <span class="absolute inset-0 flex items-center justify-center z-0 opacity-10 pointer-events-none" 
-      style="top: 35%; left: 50%; transform: translate(-50%, -50%);">
-  <p class="text-primary-custom-green text-9xl font-bold" style="font-size: calc(400vw / 10);">
-    O
-  </p>
-</span>
+          <!-- The text behind the image -->
+          <span class="absolute inset-0 flex items-center justify-center z-0 opacity-10 pointer-events-none"
+            style="top: 35%; left: 50%; transform: translate(-50%, -50%);">
+            <p class="text-primary-custom-green text-9xl font-bold" style="font-size: calc(400vw / 10);">
+              O
+            </p>
+          </span>
 
-</div>
+        </div>
       </div>
     </header>
 
-
-
-
   </div>
 
-
-
-  <!-- here -->
-
-
-
   <!-- Explore Section -->
-  <div class="bg-black">
+  <div class="bg-black block-element">
     <section class="max-w-screen-xl mx-auto py-11 gap-8 ">
       <div class="text-white text-center mx-10">
-        <p class="text-primary-custom-green mb-2">Why Choose Us?</p>
+        <p class="text-primary-custom-green mb-2 ">Why Choose Us?</p>
         <h1 class="text-white text-6xl font-bold leading-tight mb-10 tracking-tighter">
 
           <span class="text-stroke">FUEL YOUR</span> AMBITION
           <br>
           <span class="text-stroke">AND IGNITE</span> YOUR PASSION
         </h1>
-
       </div>
 
       <div class="mt-16 grid grid-cols-4 gap-8">
         <!-- Strength Icon (Dumbbell Icon) -->
-        <div
-          class="p-4 bg-slate-900 border-2 border-transparent rounded-lg transition duration-300 hover:bg-primary-extra-light hover:border-secondary group">
-          <span class="inline-block p-2 mb-4 text-3xl text-black bg-primary-custom-green rounded">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
-              <g fill="none">
-                <path
-                  d="M21.37 36c1.45-5.25 6.52-9 12.36-8.38c5.56.59 9.98 5.28 10.26 10.86c.07 1.47-.13 2.88-.56 4.19c-.26.8-1.04 1.33-1.89 1.33H11.758c-5.048 0-8.834-4.619-7.844-9.569L10 4h12l4 7l-8.57 6.13L15 14" />
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2"
-                  stroke-width="5"
-                  d="M21.37 36c1.45-5.25 6.52-9 12.36-8.38c5.56.59 9.98 5.28 10.26 10.86c.07 1.47-.13 2.88-.56 4.19c-.26.8-1.04 1.33-1.89 1.33H11.758c-5.048 0-8.834-4.619-7.844-9.569L10 4h12l4 7l-8.57 6.13L15 14m2.44 3.13L22 34" />
-              </g>
-            </svg>
-          </span>
-          <h4 class="mb-2 text-xl font-bold text-white">Strength</h4>
-          <p class="mb-4 text-text-light text-white">
-            Embrace the essence of strength as we delve into its various dimensions: physical, mental, and emotional.
-          </p>
-          <a href="#"
-            class="inline-flex items-center font-semibold text-white transition-all duration-300 group-hover:text-secondary-color">
-            Join Now
-            <ArrowLongRightIcon
-              class="h-6 w-6 ml-2 transform transition-transform duration-300 group-hover:translate-x-2" />
-          </a>
-        </div>
-        <div
-          class="p-4 bg-slate-900 border-2 border-transparent rounded-lg transition duration-300 hover:bg-primary-extra-light hover:border-secondary group">
-          <span class="inline-block p-2 mb-4 text-3xl text-black bg-primary-custom-green rounded">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256">
-              <path fill="currentColor"
-                d="M244 116V88a20 20 0 0 0-20-20h-16v-4a20 20 0 0 0-20-20h-24a20 20 0 0 0-20 20v52h-32V64a20 20 0 0 0-20-20H68a20 20 0 0 0-20 20v4H32a20 20 0 0 0-20 20v28a12 12 0 0 0 0 24v28a20 20 0 0 0 20 20h16v4a20 20 0 0 0 20 20h24a20 20 0 0 0 20-20v-52h32v52a20 20 0 0 0 20 20h24a20 20 0 0 0 20-20v-4h16a20 20 0 0 0 20-20v-28a12 12 0 0 0 0-24M36 164V92h12v72Zm52 24H72V68h16Zm96 0h-16V68h16Zm36-24h-12V92h12Z" />
-            </svg>
-          </span>
-          <h4 class="mb-2 text-xl font-bold text-white">Physical Fitness</h4>
-          <p class="mb-4 text-text-light text-white">
-            It encompasses a range of activities that improve health, strength, flexibility, and overall well-being.
-          </p>
-          <a href="#"
-            class="inline-flex items-center font-semibold text-white transition-all duration-300 group-hover:text-secondary-color">
-            Join Now
-            <ArrowLongRightIcon
-              class="h-6 w-6 ml-2 transform transition-transform duration-300 group-hover:translate-x-2" />
-          </a>
-        </div>
-        <!-- Fat Loss Icon (Scale Icon) -->
-        <div
-          class="p-4 bg-slate-900 border-2 border-transparent rounded-lg transition duration-300 hover:bg-primary-extra-light hover:border-secondary group">
-          <span class="inline-block p-2 mb-4 text-3xl text-black bg-primary-custom-green rounded">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-              <path fill="currentColor"
-                d="M12 3a4 4 0 0 1 4 4c0 .73-.19 1.41-.54 2H18c.95 0 1.75.67 1.95 1.56C21.96 18.57 22 18.78 22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2c0-.22.04-.43 2.05-8.44C4.25 9.67 5.05 9 6 9h2.54A3.9 3.9 0 0 1 8 7a4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2m-6 6v8h2v-2.5l1 1V19h2v-2l-2-2l2-2v-2H9v1.5l-1 1V11zm9 0c-1.11 0-2 .89-2 2v4c0 1.11.89 2 2 2h3v-5h-2v3h-1v-4h3v-2z" />
-            </svg>
-          </span>
-          <h4 class="mb-2 text-xl font-bold text-white">Fat Loss</h4>
-          <p class="mb-4 text-text-light text-white">
-            Through a combination of workout routines and expert guidance, we'll empower you to reach your goals.
-          </p>
-          <a href="#"
-            class="inline-flex items-center font-semibold text-white transition-all duration-300 group-hover:text-secondary-color">
-            Join Now
-            <ArrowLongRightIcon
-              class="h-6 w-6 ml-2 transform transition-transform duration-300 group-hover:translate-x-2" />
-          </a>
-        </div>
-        <!-- Weight Gain Icon (Apple Icon) -->
-        <div
-          class="p-4 bg-slate-900 border-2 border-transparent rounded-lg transition duration-300 hover:bg-primary-extra-light hover:border-secondary group">
-          <span class="inline-block p-2 mb-4 text-3xl text-black bg-primary-custom-green rounded">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
-              <g fill="none">
-                <path stroke="currentColor" stroke-linejoin="round" stroke-width="4"
-                  d="M41 4H7a3 3 0 0 0-3 3v34a3 3 0 0 0 3 3h34a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Z" />
-                <path stroke="currentColor" stroke-linecap="round" stroke-width="4"
-                  d="M12 19.054q4.987-6 12-6q7.012 0 12 6" />
-                <path fill="currentColor" d="M24 31a3 3 0 1 0 0-6a3 3 0 0 0 0 6" />
-                <path stroke="currentColor" stroke-linecap="round" stroke-width="4" d="m19 21l5.008 7" />
-              </g>
-            </svg>
-          </span>
-          <h4 class="mb-2 text-xl font-bold text-white">Weight Gain</h4>
-          <p class="mb-4 text-text-light text-white">
-            Our program offers a sustainable, effective approach to healthy weight gain for individuals.
-          </p>
-          <a href="#"
-            class="inline-flex items-center font-semibold text-white transition-all duration-300 group-hover:text-secondary-color">
-            Join Now
-            <ArrowLongRightIcon
-              class="h-6 w-6 ml-2 transform transition-transform duration-300 group-hover:translate-x-2" />
-          </a>
-        </div>
+        <NuxtLink to="/signup" class="block">
+  <div class="p-4 bg-slate-900 border-2 border-transparent rounded-lg transition duration-300 hover:bg-primary-extra-light hover:border-secondary group">
+    <span class="inline-block p-2 mb-4 text-3xl text-black bg-primary-custom-green rounded">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
+        <g fill="none">
+          <path
+            d="M21.37 36c1.45-5.25 6.52-9 12.36-8.38c5.56.59 9.98 5.28 10.26 10.86c.07 1.47-.13 2.88-.56 4.19c-.26.8-1.04 1.33-1.89 1.33H11.758c-5.048 0-8.834-4.619-7.844-9.569L10 4h12l4 7l-8.57 6.13L15 14" />
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2"
+            stroke-width="5"
+            d="M21.37 36c1.45-5.25 6.52-9 12.36-8.38c5.56.59 9.98 5.28 10.26 10.86c.07 1.47-.13 2.88-.56 4.19c-.26.8-1.04 1.33-1.89 1.33H11.758c-5.048 0-8.834-4.619-7.844-9.569L10 4h12l4 7l-8.57 6.13L15 14m2.44 3.13L22 34" />
+        </g>
+      </svg>
+    </span>
+    <h4 class="mb-2 text-xl font-bold text-white">Strength</h4>
+    <p class="mb-4 text-text-light text-white">
+      Embrace the essence of strength as we delve into its various dimensions: physical, mental, and emotional.
+    </p>
+    <a href="#"
+      class="inline-flex items-center font-semibold text-white transition-all duration-300 group-hover:text-secondary-color">
+      Join Now
+      <ArrowLongRightIcon
+        class="h-6 w-6 ml-2 transform transition-transform duration-300 group-hover:translate-x-2" />
+    </a>
+  </div>
+</NuxtLink>
+
+<NuxtLink to="/signup" class="block">
+  <div class="p-4 bg-slate-900 border-2 border-transparent rounded-lg transition duration-300 hover:bg-primary-extra-light hover:border-secondary group">
+    <span class="inline-block p-2 mb-4 text-3xl text-black bg-primary-custom-green rounded">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256">
+        <path fill="currentColor"
+          d="M244 116V88a20 20 0 0 0-20-20h-16v-4a20 20 0 0 0-20-20h-24a20 20 0 0 0-20 20v52h-32V64a20 20 0 0 0-20-20H68a20 20 0 0 0-20 20v4H32a20 20 0 0 0-20 20v28a12 12 0 0 0 0 24v28a20 20 0 0 0 20 20h16v4a20 20 0 0 0 20 20h24a20 20 0 0 0 20-20v-52h32v52a20 20 0 0 0 20 20h24a20 20 0 0 0 20-20v-4h16a20 20 0 0 0 20-20v-28a12 12 0 0 0 0-24M36 164V92h12v72Zm52 24H72V68h16Zm96 0h-16V68h16Zm36-24h-12V92h12Z" />
+      </svg>
+    </span>
+    <h4 class="mb-2 text-xl font-bold text-white">Physical Fitness</h4>
+    <p class="mb-4 text-text-light text-white">
+      It encompasses a range of activities that improve health, strength, flexibility, and overall well-being.
+    </p>
+    <a href="#"
+      class="inline-flex items-center font-semibold text-white transition-all duration-300 group-hover:text-secondary-color">
+      Join Now
+      <ArrowLongRightIcon
+        class="h-6 w-6 ml-2 transform transition-transform duration-300 group-hover:translate-x-2" />
+    </a>
+  </div>
+</NuxtLink>
+
+<NuxtLink to="/signup" class="block">
+  <div class="p-4 bg-slate-900 border-2 border-transparent rounded-lg transition duration-300 hover:bg-primary-extra-light hover:border-secondary group">
+    <span class="inline-block p-2 mb-4 text-3xl text-black bg-primary-custom-green rounded">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M12 3a4 4 0 0 1 4 4c0 .73-.19 1.41-.54 2H18c.95 0 1.75.67 1.95 1.56C21.96 18.57 22 18.78 22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2c0-.22.04-.43 2.05-8.44C4.25 9.67 5.05 9 6 9h2.54A3.9 3.9 0 0 1 8 7a4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2m-6 6v8h2v-2.5l1 1V19h2v-2l-2-2l2-2v-2H9v1.5l-1 1V11zm9 0c-1.11 0-2 .89-2 2v4c0 1.11.89 2 2 2h3v-5h-2v3h-1v-4h3v-2z" />
+      </svg>
+    </span>
+    <h4 class="mb-2 text-xl font-bold text-white">Fat Loss</h4>
+    <p class="mb-4 text-text-light text-white">
+      Through a combination of workout routines and expert guidance, we'll empower you to reach your goals.
+    </p>
+    <a href="#"
+      class="inline-flex items-center font-semibold text-white transition-all duration-300 group-hover:text-secondary-color">
+      Join Now
+      <ArrowLongRightIcon
+        class="h-6 w-6 ml-2 transform transition-transform duration-300 group-hover:translate-x-2" />
+    </a>
+  </div>
+</NuxtLink>
+
+<NuxtLink to="/signup" class="block">
+  <div class="p-4 bg-slate-900 border-2 border-transparent rounded-lg transition duration-300 hover:bg-primary-extra-light hover:border-secondary group">
+    <span class="inline-block p-2 mb-4 text-3xl text-black bg-primary-custom-green rounded">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
+        <g fill="none">
+          <path stroke="currentColor" stroke-linejoin="round" stroke-width="4"
+            d="M41 4H7a3 3 0 0 0-3 3v34a3 3 0 0 0 3 3h34a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Z" />
+          <path stroke="currentColor" stroke-linecap="round" stroke-width="4"
+            d="M11 29h10l4 4M11 23h10l4 4M11 17h10l4 4M11 11h10l4 4M35 11H19M35 17H19M35 23H19M35 29H19" />
+        </g>
+      </svg>
+    </span>
+    <h4 class="mb-2 text-xl font-bold text-white">Weight Gain</h4>
+    <p class="mb-4 text-text-light text-white">
+      Learn how to gain weight effectively through the right nutrition and exercise strategies.
+    </p>
+    <a href="#"
+      class="inline-flex items-center font-semibold text-white transition-all duration-300 group-hover:text-secondary-color">
+      Join Now
+      <ArrowLongRightIcon
+        class="h-6 w-6 ml-2 transform transition-transform duration-300 group-hover:translate-x-2" />
+    </a>
+  </div>
+</NuxtLink>
+
       </div>
     </section>
   </div>
+
+
+  <!-- Start ng pricing -->
 
   <div class="bg-black pt-10 ">
 
     <div class="text-white text-center">
       <p class="text-primary-custom-green ">Pricing</p>
       <h1 class="text-white text-6xl font-bold leading-6rem mb-10 tracking-tighter">
-        CHOOSE <span class="text-stroke">YOUR PERFECT</span> PLAN
+        CHOOSE <span class="text-stroke"> YOUR PERFECT</span> PLAN
       </h1>
     </div>
     <pricing />
@@ -277,10 +271,10 @@
       </h1>
 
 
-      <!-- Start here  -->
+      <!-- Start here sa footer-->
       <div class="">
-        <div class="text-white max-w-full overflow-x-hidden ">
-          <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
+        <div class="text-white overflow-x-hidden ">
+          <ul class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
             <li class="flex items-center border border-white py-4 px-4 bg-slate-900">
               <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24"
                 class="mr-4 bg-primary-custom-green lg:rounded-xl">
@@ -323,6 +317,18 @@
     <div class="pt-10">
       <bottomsec />
     </div>
+    <div class="max-w-screen-xl mx-auto mt-6 flex items-center justify-center ">
+      <div class="flex items-center justify-center w-full">
+        <!-- Line on the left side of the text -->
+        <div class="flex-grow border-t border-gray-300"></div>
+
+        <!-- Text in the center of the line -->
+        <span class="px-4 text-gray-500">© Camalig Fitness Gym, All right reserved.</span>
+
+        <!-- Line on the right side of the text -->
+        <div class="flex-grow border-t border-gray-300"></div>
+      </div>
+    </div>
   </div>
 
 
@@ -353,9 +359,6 @@ defineComponent({
 
 
 });
-
-
-
 
 </script>
 
